@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        button, input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover, input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        details {
+            margin-top: 10px;
+            text-align: left;
+        }
+        progress {
+            width: 100%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HEYYYYYY!!! LET'S CONNECTT</h1>
+
+        <form onsubmit="alert('GOT ITTT'); return false;">
+            <label for="name">AAPKI TAREEFF??</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <details>
+            <summary>CLICK CLICK CLICK!!!</summary>
+            <p>PADITHAVUDAN KILITHUVIDAVUM</p>
+        </details>
+
+        <p>Loading Progress:</p>
+        <progress value="50" max="100"></progress>
+
+        <p>SPOTIFYY GOO</p>
+        <audio controls>
+            <source src="https://open.spotify.com/track/3Hmq8bn6gYlmHSuWadZnFB?si=2ee58550bcea4d91" type="audio/mpeg">
+            Your browser does not support the audio element
+        </audio>
+
+        <p>Watchhhh </p>
+        <video width="100%" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>CAUTION, DON'T PRESSS</p>
+        <button onclick="alert('I am coming for you')">JUST DON'T</button>
+    </div>
+
+</body>
+</html>
